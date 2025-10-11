@@ -55,7 +55,7 @@ The following software must be installed on your development machine:
 
 1. Clone the repository to your local environment:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/azkacrows/next15-boilerplate.git
 cd next15-boilerplate
 ```
 
