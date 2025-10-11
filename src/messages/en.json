@@ -1,0 +1,198 @@
+{
+    "metadata": {
+        "title": "Next.js 15 Boilerplate",
+        "description": "Production-ready Next.js 15 boilerplate with TypeScript, Tailwind CSS, and internationalization",
+        "keywords": "Next.js, React, TypeScript, Tailwind CSS, i18n, SEO"
+    },
+    "common": {
+        "welcome": "Welcome",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "viewMore": "View More",
+        "viewLess": "View Less"
+    },
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "blog": "Blog",
+        "products": "Products",
+        "services": "Services"
+    },
+    "localeSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, en {English} id {Indonesian} ja {Japanese} other {Unknown}}"
+    },
+    "homePage": {
+        "title": "Home",
+        "heading": "Next.js 15 Boilerplate",
+        "subtitle": "Production-ready starter with TypeScript, Tailwind CSS & i18n",
+        "description": "A modern, fully-featured Next.js boilerplate designed for building scalable web applications with best practices.",
+        "features": {
+            "title": "Features",
+            "typescript": "TypeScript with strict mode",
+            "tailwind": "Tailwind CSS 4 with custom theming",
+            "i18n": "Full internationalization support",
+            "seo": "SEO-ready with metadata API",
+            "staticExport": "Static export configured",
+            "performance": "Optimized for performance"
+        },
+        "getStarted": "Get Started",
+        "learnMore": "Learn More",
+        "routingGuide": {
+            "title": "Need Help with Routing?",
+            "description": "Learn how to use App Router and create routes in your application",
+            "link": "View Routing Guide"
+        }
+    },
+    "errors": {
+        "pageNotFound": "Page not found",
+        "somethingWentWrong": "Something went wrong",
+        "tryAgain": "Try again",
+        "goHome": "Go to homepage",
+        "400": "Bad Request",
+        "401": "Unauthorized",
+        "403": "Forbidden",
+        "404": "Not Found",
+        "500": "Internal Server Error",
+        "503": "Service Unavailable"
+    },
+    "footer": {
+        "copyright": "© {year} All rights reserved.",
+        "madeWith": "Made with ☕ and 😴 by azkacrows"
+    },
+    "gettingStarted": {
+        "title": "Getting Started",
+        "heading": "Getting Started with Next.js 15 Boilerplate",
+        "description": "Learn how to set up and start building with this boilerplate",
+        "intro": "Follow these steps to get your development environment up and running.",
+        "prerequisites": {
+            "title": "Prerequisites",
+            "node": "Node.js 18.17 or higher",
+            "packageManager": "Package manager: npm, yarn, pnpm, or bun"
+        },
+        "installation": {
+            "title": "Installation",
+            "step1": "1. Clone the repository:",
+            "step2": "2. Install dependencies:",
+            "step3": "3. Start the development server:"
+        },
+        "nextSteps": {
+            "title": "Next Steps",
+            "explore": "Explore the project structure and understand the folder organization",
+            "customize": "Customize the theme and styling to match your brand",
+            "build": "Start building your features and pages"
+        }
+    },
+    "learnMore": {
+        "title": "Learn More",
+        "heading": "Learn More About This Boilerplate",
+        "description": "Discover the technologies and best practices used in this project",
+        "intro": "This boilerplate is built with modern web development technologies and follows industry best practices.",
+        "architecture": {
+            "title": "Architecture",
+            "description": "The project follows a feature-based architecture with clear separation of concerns:",
+            "feature1": "App Router for intuitive file-based routing",
+            "feature2": "Server Components by default for optimal performance",
+            "feature3": "Static export capability for flexible deployment options"
+        },
+        "technologies": {
+            "title": "Core Technologies",
+            "nextjs": "React framework with App Router and Server Components for building modern web applications",
+            "typescript": "Strict mode enabled for comprehensive type safety and better developer experience",
+            "tailwind": "Modern utility-first CSS framework with custom theme support",
+            "i18n": "Complete internationalization support with type-safe translations"
+        },
+        "features": {
+            "title": "Key Features",
+            "staticExport": {
+                "title": "Static Export",
+                "description": "Pre-configured for static site generation, enabling deployment to any static hosting platform"
+            },
+            "seo": {
+                "title": "SEO Optimization",
+                "description": "Built-in SEO with Metadata API, robots.txt, and sitemap generation for better search engine visibility"
+            },
+            "performance": {
+                "title": "Performance",
+                "description": "Optimized for Core Web Vitals with zero CLS, efficient code splitting, and minimal JavaScript"
+            }
+        },
+        "resources": {
+            "title": "Documentation & Resources",
+            "nextjsDocs": "Next.js Documentation",
+            "typescriptDocs": "TypeScript Documentation",
+            "tailwindDocs": "Tailwind CSS Documentation",
+            "nextIntlDocs": "next-intl Documentation"
+        }
+    },
+    "routingGuide": {
+        "title": "Routing Guide",
+        "heading": "Routing Guide for Next.js 15",
+        "description": "Learn how to use App Router and create routes in your Next.js application",
+        "intro": "This guide explains the routing system used in this boilerplate and how to create new routes for your project.",
+        "appRouter": {
+            "title": "App Router Structure",
+            "description": "This project uses Next.js App Router with file-system based routing. Each folder represents a route segment."
+        },
+        "dynamicRoutes": {
+            "title": "Dynamic Routes",
+            "description": "Create dynamic routes using square brackets in folder names:",
+            "example1": {
+                "title": "Single Dynamic Segment",
+                "description": "Creates routes like /blog/hello-world, /blog/nextjs-guide"
+            },
+            "example2": {
+                "title": "Multiple Dynamic Segments",
+                "description": "Creates routes like /products/electronics/123, /products/clothing/456"
+            }
+        },
+        "navigation": {
+            "title": "Navigation Methods",
+            "link": {
+                "title": "Using Link Component",
+                "description": "The recommended way for client-side navigation:"
+            },
+            "router": {
+                "title": "Using useRouter Hook",
+                "description": "For programmatic navigation in client components:"
+            },
+            "useLocale": {
+                "title": "Using Custom useLocale Hook",
+                "description": "This boilerplate provides a custom hook for locale-aware navigation:"
+            }
+        },
+        "i18nRouting": {
+            "title": "Internationalized Routing",
+            "description": "All routes are automatically prefixed with the locale:",
+            "urlStructure": "URL Structure:",
+            "automatic": "Automatic Locale Detection:",
+            "automaticDescription": "The locale switcher automatically updates URLs while preserving the current path."
+        },
+        "bestPractices": {
+            "title": "Best Practices",
+            "practice1": "Always use Link component for internal navigation to benefit from prefetching",
+            "practice2": "Use generateStaticParams for all dynamic routes to enable static export",
+            "practice3": "Keep Server Components by default and only use 'use client' when necessary",
+            "practice4": "Always include locale parameter in page components for i18n support",
+            "practice5": "Use the custom useLocale hook for locale-aware client-side navigation"
+        },
+        "examples": {
+            "title": "Complete Example",
+            "createPage": "Creating a new localized page:"
+        }
+    }
+}

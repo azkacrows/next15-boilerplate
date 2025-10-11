@@ -1,0 +1,198 @@
+{
+    "metadata": {
+        "title": "Next.js 15 ボイラープレート",
+        "description": "TypeScript、Tailwind CSS、国際化対応のプロダクション対応 Next.js 15 ボイラープレート",
+        "keywords": "Next.js, React, TypeScript, Tailwind CSS, i18n, SEO"
+    },
+    "common": {
+        "welcome": "ようこそ",
+        "loading": "読み込み中...",
+        "error": "エラー",
+        "success": "成功",
+        "cancel": "キャンセル",
+        "confirm": "確認",
+        "save": "保存",
+        "delete": "削除",
+        "edit": "編集",
+        "close": "閉じる",
+        "back": "戻る",
+        "next": "次へ",
+        "previous": "前へ",
+        "search": "検索",
+        "filter": "フィルター",
+        "sort": "並び替え",
+        "viewMore": "もっと見る",
+        "viewLess": "折りたたむ"
+    },
+    "navigation": {
+        "home": "ホーム",
+        "about": "私たちについて",
+        "contact": "お問い合わせ",
+        "blog": "ブログ",
+        "products": "製品",
+        "services": "サービス"
+    },
+    "localeSwitcher": {
+        "label": "言語を変更",
+        "locale": "{locale, select, en {英語} id {インドネシア語} ja {日本語} other {不明}}"
+    },
+    "homePage": {
+        "title": "ホーム",
+        "heading": "Next.js 15 ボイラープレート",
+        "subtitle": "TypeScript、Tailwind CSS、i18n対応のプロダクション対応スターター",
+        "description": "ベストプラクティスを採用したスケーラブルなウェブアプリケーションを構築するために設計された、モダンで充実したNext.jsボイラープレート。",
+        "features": {
+            "title": "機能",
+            "typescript": "StrictモードのTypeScript",
+            "tailwind": "カスタムテーマ対応のTailwind CSS 4",
+            "i18n": "完全な国際化サポート",
+            "seo": "Metadata APIでSEO対応",
+            "staticExport": "静的エクスポート設定済み",
+            "performance": "パフォーマンス最適化"
+        },
+        "getStarted": "始める",
+        "learnMore": "詳しく見る",
+        "routingGuide": {
+            "title": "ルーティングのヘルプが必要ですか？",
+            "description": "App Routerの使用方法とアプリケーションでルートを作成する方法を学ぶ",
+            "link": "ルーティングガイドを見る"
+        }
+    },
+    "errors": {
+        "pageNotFound": "ページが見つかりません",
+        "somethingWentWrong": "何か問題が発生しました",
+        "tryAgain": "もう一度試す",
+        "goHome": "ホームへ戻る",
+        "400": "不正なリクエスト",
+        "401": "認証が必要です",
+        "403": "アクセスが禁止されています",
+        "404": "見つかりません",
+        "500": "サーバーエラー",
+        "503": "サービス利用不可"
+    },
+    "footer": {
+        "copyright": "© {year} すべての権利保護。",
+        "madeWith": "azkacrowsが☕と😴で作成"
+    },
+    "gettingStarted": {
+        "title": "始める",
+        "heading": "Next.js 15 ボイラープレートを始める",
+        "description": "このボイラープレートを設定して構築を始める方法を学ぶ",
+        "intro": "次の手順に従って、開発環境を設定してください。",
+        "prerequisites": {
+            "title": "前提条件",
+            "node": "Node.js 18.17 以上",
+            "packageManager": "パッケージマネージャー：npm、yarn、pnpm、またはbun"
+        },
+        "installation": {
+            "title": "インストール",
+            "step1": "1. リポジトリをクローン：",
+            "step2": "2. 依存関係をインストール：",
+            "step3": "3. 開発サーバーを起動："
+        },
+        "nextSteps": {
+            "title": "次のステップ",
+            "explore": "プロジェクト構造を探索し、フォルダー編成を理解する",
+            "customize": "テーマとスタイルをブランドに合わせてカスタマイズする",
+            "build": "機能とページの構築を開始する"
+        }
+    },
+    "learnMore": {
+        "title": "詳しく見る",
+        "heading": "このボイラープレートについて詳しく見る",
+        "description": "このプロジェクトで使用されている技術とベストプラクティスを発見する",
+        "intro": "このボイラープレートは、最新のWeb開発技術で構築され、業界のベストプラクティスに従っています。",
+        "architecture": {
+            "title": "アーキテクチャ",
+            "description": "プロジェクトは、明確な関心の分離を持つ機能ベースのアーキテクチャに従っています：",
+            "feature1": "直感的なファイルベースのルーティングのApp Router",
+            "feature2": "最適なパフォーマンスのためのデフォルトServer Components",
+            "feature3": "柔軟なデプロイオプションのための静的エクスポート機能"
+        },
+        "technologies": {
+            "title": "コアテクノロジー",
+            "nextjs": "現代的なWebアプリケーションを構築するためのApp RouterとServer Componentsを備えたReactフレームワーク",
+            "typescript": "包括的な型安全性と優れた開発者体験のためにStrictモードが有効",
+            "tailwind": "カスタムテーマサポート付きの最新ユーティリティファーストCSSフレームワーク",
+            "i18n": "型安全な翻訳を使用した完全な国際化サポート"
+        },
+        "features": {
+            "title": "主要機能",
+            "staticExport": {
+                "title": "静的エクスポート",
+                "description": "静的サイト生成用に事前設定され、任意の静的ホスティングプラットフォームへのデプロイを可能にする"
+            },
+            "seo": {
+                "title": "SEO最適化",
+                "description": "Metadata API、robots.txt、サイトマップ生成を使用した組み込みSEOで、検索エンジンの可視性を向上"
+            },
+            "performance": {
+                "title": "パフォーマンス",
+                "description": "Zero CLS、効率的なコード分割、最小限のJavaScriptでCore Web Vitalsに最適化"
+            }
+        },
+        "resources": {
+            "title": "ドキュメントとリソース",
+            "nextjsDocs": "Next.jsドキュメント",
+            "typescriptDocs": "TypeScriptドキュメント",
+            "tailwindDocs": "Tailwind CSSドキュメント",
+            "nextIntlDocs": "next-intlドキュメント"
+        }
+    },
+    "routingGuide": {
+        "title": "ルーティングガイド",
+        "heading": "Next.js 15のルーティングガイド",
+        "description": "App Routerの使用方法とNext.jsアプリケーションでルートを作成する方法を学ぶ",
+        "intro": "このガイドでは、このボイラープレートで使用されているルーティングシステムと、プロジェクトの新しいルートを作成する方法を説明します。",
+        "appRouter": {
+            "title": "App Router構造",
+            "description": "このプロジェクトは、ファイルシステムベースのルーティングを使用するNext.js App Routerを使用しています。各フォルダーはルートセグメントを表します。"
+        },
+        "dynamicRoutes": {
+            "title": "ダイナミックルート",
+            "description": "フォルダー名に角括弧を使用してダイナミックルートを作成します：",
+            "example1": {
+                "title": "単一ダイナミックセグメント",
+                "description": "/blog/hello-world、/blog/nextjs-guideのようなルートを作成します"
+            },
+            "example2": {
+                "title": "複数のダイナミックセグメント",
+                "description": "/products/electronics/123、/products/clothing/456のようなルートを作成します"
+            }
+        },
+        "navigation": {
+            "title": "ナビゲーション方法",
+            "link": {
+                "title": "Linkコンポーネントの使用",
+                "description": "クライアントサイドナビゲーションに推奨される方法："
+            },
+            "router": {
+                "title": "useRouterフックの使用",
+                "description": "クライアントコンポーネントでのプログラマティックナビゲーション用："
+            },
+            "useLocale": {
+                "title": "カスタムuseLocaleフックの使用",
+                "description": "このボイラープレートは、ロケール対応ナビゲーション用のカスタムフックを提供します："
+            }
+        },
+        "i18nRouting": {
+            "title": "国際化ルーティング",
+            "description": "すべてのルートに自動的にロケール接頭辞が付きます：",
+            "urlStructure": "URL構造：",
+            "automatic": "自動ロケール検出：",
+            "automaticDescription": "ロケールスイッチャーは、現在のパスを保持しながら自動的にURLを更新します。"
+        },
+        "bestPractices": {
+            "title": "ベストプラクティス",
+            "practice1": "prefetchingの恩恵を受けるため、内部ナビゲーションには必ずLinkコンポーネントを使用する",
+            "practice2": "静的エクスポートを有効にするため、すべてのダイナミックルートに対してgenerateStaticParamsを使用する",
+            "practice3": "デフォルトでServer Componentsを使用し、必要な場合のみ'use client'を使用する",
+            "practice4": "i18nサポートのため、ページコンポーネントに必ずlocaleパラメーターを含める",
+            "practice5": "ロケール対応のクライアントサイドナビゲーションにはカスタムuseLocaleフックを使用する"
+        },
+        "examples": {
+            "title": "完全な例",
+            "createPage": "新しいローカライズされたページの作成："
+        }
+    }
+}

@@ -1,0 +1,198 @@
+{
+    "metadata": {
+        "title": "Next.js 15 Boilerplate",
+        "description": "Boilerplate Next.js 15 siap produksi dengan TypeScript, Tailwind CSS, dan internasionalisasi",
+        "keywords": "Next.js, React, TypeScript, Tailwind CSS, i18n, SEO"
+    },
+    "common": {
+        "welcome": "Selamat Datang",
+        "loading": "Memuat...",
+        "error": "Kesalahan",
+        "success": "Berhasil",
+        "cancel": "Batal",
+        "confirm": "Konfirmasi",
+        "save": "Simpan",
+        "delete": "Hapus",
+        "edit": "Edit",
+        "close": "Tutup",
+        "back": "Kembali",
+        "next": "Selanjutnya",
+        "previous": "Sebelumnya",
+        "search": "Cari",
+        "filter": "Filter",
+        "sort": "Urutkan",
+        "viewMore": "Lihat Lebih Banyak",
+        "viewLess": "Lihat Lebih Sedikit"
+    },
+    "navigation": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "contact": "Kontak",
+        "blog": "Blog",
+        "products": "Produk",
+        "services": "Layanan"
+    },
+    "localeSwitcher": {
+        "label": "Ganti bahasa",
+        "locale": "{locale, select, en {Inggris} id {Indonesia} ja {Jepang} other {Tidak Diketahui}}"
+    },
+    "homePage": {
+        "title": "Beranda",
+        "heading": "Next.js 15 Boilerplate",
+        "subtitle": "Starter siap produksi dengan TypeScript, Tailwind CSS & i18n",
+        "description": "Boilerplate Next.js modern dan lengkap yang dirancang untuk membangun aplikasi web yang dapat diskalakan dengan praktik terbaik.",
+        "features": {
+            "title": "Fitur",
+            "typescript": "TypeScript dengan mode strict",
+            "tailwind": "Tailwind CSS 4 dengan tema kustom",
+            "i18n": "Dukungan internasionalisasi penuh",
+            "seo": "Siap SEO dengan metadata API",
+            "staticExport": "Static export terkonfigurasi",
+            "performance": "Dioptimalkan untuk performa"
+        },
+        "getStarted": "Memulai",
+        "learnMore": "Pelajari Lebih Lanjut",
+        "routingGuide": {
+            "title": "Butuh Bantuan dengan Routing?",
+            "description": "Pelajari cara menggunakan App Router dan membuat route di aplikasi Anda",
+            "link": "Lihat Panduan Routing"
+        }
+    },
+    "errors": {
+        "pageNotFound": "Halaman tidak ditemukan",
+        "somethingWentWrong": "Terjadi kesalahan",
+        "tryAgain": "Coba lagi",
+        "goHome": "Kembali ke beranda",
+        "400": "Permintaan Buruk",
+        "401": "Tidak Terotorisasi",
+        "403": "Terlarang",
+        "404": "Tidak Ditemukan",
+        "500": "Kesalahan Server Internal",
+        "503": "Layanan Tidak Tersedia"
+    },
+    "footer": {
+        "copyright": "© {year} Hak cipta dilindungi.",
+        "madeWith": "Dibuat dengan ☕ dan 😴 oleh azkacrows"
+    },
+    "gettingStarted": {
+        "title": "Memulai",
+        "heading": "Memulai dengan Next.js 15 Boilerplate",
+        "description": "Pelajari cara mengatur dan mulai membangun dengan boilerplate ini",
+        "intro": "Ikuti langkah-langkah berikut untuk menyiapkan lingkungan pengembangan Anda.",
+        "prerequisites": {
+            "title": "Prasyarat",
+            "node": "Node.js 18.17 atau lebih tinggi",
+            "packageManager": "Package manager: npm, yarn, pnpm, atau bun"
+        },
+        "installation": {
+            "title": "Instalasi",
+            "step1": "1. Clone repository:",
+            "step2": "2. Install dependencies:",
+            "step3": "3. Jalankan development server:"
+        },
+        "nextSteps": {
+            "title": "Langkah Selanjutnya",
+            "explore": "Jelajahi struktur proyek dan pahami organisasi folder",
+            "customize": "Sesuaikan tema dan styling dengan brand Anda",
+            "build": "Mulai membangun fitur dan halaman Anda"
+        }
+    },
+    "learnMore": {
+        "title": "Pelajari Lebih Lanjut",
+        "heading": "Pelajari Lebih Lanjut Tentang Boilerplate Ini",
+        "description": "Temukan teknologi dan praktik terbaik yang digunakan dalam proyek ini",
+        "intro": "Boilerplate ini dibangun dengan teknologi pengembangan web modern dan mengikuti praktik terbaik industri.",
+        "architecture": {
+            "title": "Arsitektur",
+            "description": "Proyek ini mengikuti arsitektur berbasis fitur dengan pemisahan keprihatinan yang jelas:",
+            "feature1": "App Router untuk routing berbasis file yang intuitif",
+            "feature2": "Server Components secara default untuk performa optimal",
+            "feature3": "Kemampuan static export untuk opsi deployment yang fleksibel"
+        },
+        "technologies": {
+            "title": "Teknologi Inti",
+            "nextjs": "Framework React dengan App Router dan Server Components untuk membangun aplikasi web modern",
+            "typescript": "Strict mode diaktifkan untuk type safety komprehensif dan pengalaman developer yang lebih baik",
+            "tailwind": "Framework CSS utility-first modern dengan dukungan tema kustom",
+            "i18n": "Dukungan internasionalisasi lengkap dengan terjemahan yang type-safe"
+        },
+        "features": {
+            "title": "Fitur Utama",
+            "staticExport": {
+                "title": "Static Export",
+                "description": "Pra-konfigurasi untuk static site generation, memungkinkan deployment ke platform hosting statis mana pun"
+            },
+            "seo": {
+                "title": "Optimasi SEO",
+                "description": "SEO built-in dengan Metadata API, robots.txt, dan pembuatan sitemap untuk visibilitas mesin pencari yang lebih baik"
+            },
+            "performance": {
+                "title": "Performa",
+                "description": "Dioptimalkan untuk Core Web Vitals dengan zero CLS, code splitting efisien, dan JavaScript minimal"
+            }
+        },
+        "resources": {
+            "title": "Dokumentasi & Sumber Daya",
+            "nextjsDocs": "Dokumentasi Next.js",
+            "typescriptDocs": "Dokumentasi TypeScript",
+            "tailwindDocs": "Dokumentasi Tailwind CSS",
+            "nextIntlDocs": "Dokumentasi next-intl"
+        }
+    },
+    "routingGuide": {
+        "title": "Panduan Routing",
+        "heading": "Panduan Routing untuk Next.js 15",
+        "description": "Pelajari cara menggunakan App Router dan membuat route di aplikasi Next.js Anda",
+        "intro": "Panduan ini menjelaskan sistem routing yang digunakan dalam boilerplate ini dan cara membuat route baru untuk proyek Anda.",
+        "appRouter": {
+            "title": "Struktur App Router",
+            "description": "Proyek ini menggunakan Next.js App Router dengan routing berbasis sistem file. Setiap folder mewakili segmen route."
+        },
+        "dynamicRoutes": {
+            "title": "Dynamic Routes",
+            "description": "Buat dynamic routes menggunakan tanda kurung siku pada nama folder:",
+            "example1": {
+                "title": "Segmen Dinamis Tunggal",
+                "description": "Membuat route seperti /blog/hello-world, /blog/nextjs-guide"
+            },
+            "example2": {
+                "title": "Beberapa Segmen Dinamis",
+                "description": "Membuat route seperti /products/electronics/123, /products/clothing/456"
+            }
+        },
+        "navigation": {
+            "title": "Metode Navigasi",
+            "link": {
+                "title": "Menggunakan Komponen Link",
+                "description": "Cara yang direkomendasikan untuk navigasi client-side:"
+            },
+            "router": {
+                "title": "Menggunakan Hook useRouter",
+                "description": "Untuk navigasi programatik di komponen client:"
+            },
+            "useLocale": {
+                "title": "Menggunakan Hook useLocale Kustom",
+                "description": "Boilerplate ini menyediakan hook kustom untuk navigasi yang sadar locale:"
+            }
+        },
+        "i18nRouting": {
+            "title": "Routing Terinternasionalisasi",
+            "description": "Semua route secara otomatis diberi awalan locale:",
+            "urlStructure": "Struktur URL:",
+            "automatic": "Deteksi Locale Otomatis:",
+            "automaticDescription": "Locale switcher secara otomatis memperbarui URL sambil mempertahankan path saat ini."
+        },
+        "bestPractices": {
+            "title": "Praktik Terbaik",
+            "practice1": "Selalu gunakan komponen Link untuk navigasi internal agar mendapat manfaat prefetching",
+            "practice2": "Gunakan generateStaticParams untuk semua dynamic routes agar static export berfungsi",
+            "practice3": "Pertahankan Server Components secara default dan hanya gunakan 'use client' jika diperlukan",
+            "practice4": "Selalu sertakan parameter locale di komponen page untuk dukungan i18n",
+            "practice5": "Gunakan hook useLocale kustom untuk navigasi client-side yang sadar locale"
+        },
+        "examples": {
+            "title": "Contoh Lengkap",
+            "createPage": "Membuat halaman yang dilokalkan baru:"
+        }
+    }
+}
