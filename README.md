@@ -2,8 +2,6 @@
 
 A production-ready starter template built with Next.js 15, TypeScript, Tailwind CSS 4, and comprehensive internationalization support. This boilerplate is designed for building scalable, performant web applications with modern development practices and static export capabilities.
 
-**Author:** [azkacrows](https://github.com/azkacrows)
-
 > **Note:** This boilerplate was created for my learning purposes and to serve as a reference for modern Next.js development best practices. It demonstrates a centralized type system, comprehensive testing, and production-ready architecture.
 
 ## Overview
