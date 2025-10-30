@@ -1,8 +1,8 @@
 {
     "metadata": {
-        "title": "Next.js 15 Boilerplate",
-        "description": "Production-ready Next.js 15 boilerplate with TypeScript, Tailwind CSS, and internationalization",
-        "keywords": "Next.js, React, TypeScript, Tailwind CSS, i18n, SEO"
+        "title": "Next.js 16 Boilerplate",
+        "description": "Production-ready Next.js 16 boilerplate with TypeScript, Tailwind CSS, Zustand, and internationalization",
+        "keywords": "Next.js, React, TypeScript, Tailwind CSS, Zustand, i18n, SEO"
     },
     "common": {
         "welcome": "Welcome",
@@ -37,9 +37,9 @@
         "locale": "{locale, select, en {English} id {Indonesian} ja {Japanese} other {Unknown}}"
     },
     "homePage": {
-        "title": "Home",
-        "heading": "Next.js 15 Boilerplate",
-        "subtitle": "Production-ready starter with TypeScript, Tailwind CSS & i18n",
+        "title": "Next.js 16 Boilerplate",
+        "heading": "Next.js 16 Boilerplate",
+        "subtitle": "Production-ready starter with TypeScript, Tailwind CSS, Zustand & i18n",
         "description": "A modern, fully-featured Next.js boilerplate designed for building scalable web applications with best practices.",
         "features": {
             "title": "Features",
@@ -59,16 +59,16 @@
         }
     },
     "errors": {
-        "pageNotFound": "Page not found",
-        "somethingWentWrong": "Something went wrong",
-        "tryAgain": "Try again",
-        "goHome": "Go to homepage",
         "400": "Bad Request",
         "401": "Unauthorized",
         "403": "Forbidden",
         "404": "Not Found",
         "500": "Internal Server Error",
-        "503": "Service Unavailable"
+        "503": "Service Unavailable",
+        "pageNotFound": "Page not found",
+        "somethingWentWrong": "Something went wrong",
+        "tryAgain": "Try again",
+        "goHome": "Go to homepage"
     },
     "footer": {
         "copyright": "© {year} All rights reserved.",
@@ -76,12 +76,12 @@
     },
     "gettingStarted": {
         "title": "Getting Started",
-        "heading": "Getting Started with Next.js 15 Boilerplate",
+        "heading": "Getting Started with Next.js 16 Boilerplate",
         "description": "Learn how to set up and start building with this boilerplate",
         "intro": "Follow these steps to get your development environment up and running.",
         "prerequisites": {
             "title": "Prerequisites",
-            "node": "Node.js 18.17 or higher",
+            "node": "Node.js 20.0 or higher (required for Next.js 16)",
             "packageManager": "Package manager: npm, yarn, pnpm, or bun"
         },
         "installation": {
@@ -136,12 +136,13 @@
             "nextjsDocs": "Next.js Documentation",
             "typescriptDocs": "TypeScript Documentation",
             "tailwindDocs": "Tailwind CSS Documentation",
-            "nextIntlDocs": "next-intl Documentation"
+            "nextIntlDocs": "next-intl Documentation",
+            "zustandDocs": "Zustand Documentation"
         }
     },
     "routingGuide": {
         "title": "Routing Guide",
-        "heading": "Routing Guide for Next.js 15",
+        "heading": "Routing Guide for Next.js 16",
         "description": "Learn how to use App Router and create routes in your Next.js application",
         "intro": "This guide explains the routing system used in this boilerplate and how to create new routes for your project.",
         "appRouter": {
@@ -193,6 +194,80 @@
         "examples": {
             "title": "Complete Example",
             "createPage": "Creating a new localized page:"
+        }
+    },
+    "changelog": {
+        "title": "Changelog",
+        "heading": "Project Changelog",
+        "description": "Track all major changes, updates, and improvements to this boilerplate",
+        "intro": "This page documents all notable changes to the Next.js boilerplate. We follow Semantic Versioning and Keep a Changelog principles.",
+        "backToHome": "Back to Home",
+        "versions": {
+            "title": "Version History",
+            "latest": "Latest"
+        }
+    },
+    "changelogPage": {
+        "title": "Changelog",
+        "description": "Track all major changes, updates, and improvements to this boilerplate",
+        "subtitle": "All notable changes to this project are documented here",
+        "backToHome": "Back to Home",
+        "footer": {
+            "copyright": "© {year} All rights reserved.",
+            "madeWith": "Made with ☕ and 😴 by azkacrows"
+        }
+    },
+    "zustandTutorial": {
+        "title": "Zustand Tutorial",
+        "heading": "State Management with Zustand",
+        "description": "Learn how to use Zustand for state management in Next.js 16",
+        "intro": "This tutorial covers Zustand state management implementation in this boilerplate, including SSR-safe patterns, middleware usage, and best practices.",
+        "backToHome": "Back to Home",
+        "whatIsZustand": {
+            "title": "What is Zustand?",
+            "description": "Zustand is a small, fast, and scalable state management solution. It provides a simple API with minimal boilerplate:",
+            "feature1": "Minimal boilerplate - no providers or reducers needed",
+            "feature2": "TypeScript support out of the box",
+            "feature3": "Middleware support for persist, devtools, and more",
+            "feature4": "Perfect for both small and large applications"
+        },
+        "storeStructure": {
+            "title": "Store Structure",
+            "description": "The UI store in this boilerplate demonstrates a complete Zustand setup with middleware:"
+        },
+        "basicUsage": {
+            "title": "Basic Usage",
+            "description": "Using Zustand in your components is straightforward. Just select the state you need:"
+        },
+        "selectorHooks": {
+            "title": "Selector Hooks",
+            "description": "Create custom hooks to encapsulate related state and actions:",
+            "usage": "Usage in components:"
+        },
+        "ssrSafety": {
+            "title": "SSR Safety",
+            "description": "When using Zustand with Next.js SSR, prevent hydration mismatches by checking if the store has hydrated:"
+        },
+        "middleware": {
+            "title": "Middleware",
+            "description": "This boilerplate uses two essential middleware:",
+            "persist": "Persist Middleware",
+            "persistDescription": "Automatically saves state to localStorage and restores it on page load",
+            "devtools": "Devtools Middleware",
+            "devtoolsDescription": "Enables Redux DevTools integration for debugging (development only)"
+        },
+        "bestPractices": {
+            "title": "Best Practices",
+            "practice1": "Use selectors to subscribe to specific state slices and prevent unnecessary re-renders",
+            "practice2": "Create custom hooks for related state and actions to improve component API",
+            "practice3": "Always check hydration state when using persisted values in SSR",
+            "practice4": "Use TypeScript for type-safe state management",
+            "practice5": "Keep stores focused on a single domain (UI, user, data, etc.)"
+        },
+        "resources": {
+            "title": "Resources",
+            "officialDocs": "Zustand Documentation",
+            "github": "GitHub Repository"
         }
     }
 }

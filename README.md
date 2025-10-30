@@ -1,6 +1,6 @@
-# Next.js 15 Boilerplate
+# Next.js 16 Boilerplate
 
-A production-ready starter template built with Next.js 15, TypeScript, Tailwind CSS 4, and comprehensive internationalization support. This boilerplate is designed for building scalable, performant web applications with modern development practices and static export capabilities.
+A production-ready starter template built with Next.js 16, TypeScript, Tailwind CSS 4, and comprehensive internationalization support. This boilerplate is designed for building scalable, performant web applications with modern development practices and static export capabilities.
 
 > **Note:** This boilerplate was created for my learning purposes and to serve as a reference for modern Next.js development best practices. It demonstrates a centralized type system, comprehensive testing, and production-ready architecture.
 
@@ -9,10 +9,11 @@ A production-ready starter template built with Next.js 15, TypeScript, Tailwind 
 This boilerplate provides a complete foundation for modern web development, incorporating industry-standard tools and patterns:
 
 **Core Technologies**
-- Next.js 15 with App Router and React Server Components
+- Next.js 16 with App Router and React Server Components
 - TypeScript with strict mode enabled for comprehensive type safety
 - Tailwind CSS 4 for utility-first styling with custom theme support
 - next-intl for complete internationalization functionality
+- Zustand for lightweight, type-safe state management
 - shadcn/ui compatible architecture for component integration
 - Playwright for end-to-end testing
 - Lucide React for professional SVG icons
@@ -22,7 +23,8 @@ This boilerplate provides a complete foundation for modern web development, inco
 - SEO optimization with Metadata API, robots.txt, and sitemap generation
 - Multi-language support (English, Indonesian, Japanese) with extensible architecture
 - Type-safe internationalization system with full TypeScript integration
-- Performance optimizations including zero cumulative layout shift
+- Performance optimizations with CLS prevention (target < 0.05)
+- SSR-safe state management with Zustand
 - Accessibility compliance with semantic HTML and ARIA labels
 - Scalable folder structure based on feature-driven development
 - Code quality enforcement through ESLint and TypeScript
@@ -46,15 +48,16 @@ This boilerplate provides a complete foundation for modern web development, inco
 
 The following software must be installed on your development machine:
 
-- Node.js version 18.17 or higher
+- **Node.js version 20.0 or higher** (required for Next.js 16)
+- npm version 7.0 or higher
 - Package manager: npm, yarn, pnpm, or bun
 
 ### Installation Procedure
 
 1. Clone the repository to your local environment:
 ```bash
-git clone https://github.com/azkacrows/next15-boilerplate.git
-cd next15-boilerplate
+git clone https://github.com/azkacrows/next16-boilerplate.git
+cd next16-boilerplate
 ```
 
 2. Install project dependencies:
@@ -88,7 +91,7 @@ The build process generates static HTML, CSS, and JavaScript files in the `out/`
 ## Project Structure
 
 ```
-next15-boilerplate/
+next16-boilerplate/
 ├── src/
 │   ├── app/                      # Next.js App Router
 │   │   ├── [locale]/             # Locale-based routing
@@ -115,6 +118,8 @@ next15-boilerplate/
 │   │   ├── hooks/               # Custom React hooks
 │   │   └── lib/
 │   │       └── utils.ts         # Utility functions
+│   ├── stores/                  # Zustand state stores
+│   │   └── useUIStore.ts        # UI state management
 │   └── types/                   # TypeScript type definitions
 │       ├── i18n.ts              # Locale types
 │       └── metadata.ts          # Metadata types
@@ -451,6 +456,7 @@ This boilerplate is built upon the following open-source technologies:
 
 - [Next.js](https://nextjs.org/) - React-based web application framework
 - [next-intl](https://next-intl-docs.vercel.app/) - Internationalization library for Next.js
+- [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript superset
 - [shadcn/ui](https://ui.shadcn.com/) - Re-usable component architecture inspiration

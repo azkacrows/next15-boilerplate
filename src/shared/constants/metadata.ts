@@ -2,25 +2,26 @@ import type { Metadata } from 'next';
 import type { Locale } from '@/types/i18n';
 import type { SiteMetadata } from '@/types/metadata';
 
-// Environment variables with fallbacks
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com';
-const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Next.js 15 Boilerplate';
+const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Next.js 16 Boilerplate';
 
-// Base site metadata
 export const siteMetadata: SiteMetadata = {
-    title: 'Next.js 15 Boilerplate',
+    title: 'Next.js 16 Boilerplate',
     description:
-        'Production-ready Next.js 15 boilerplate with TypeScript, Tailwind CSS, and internationalization',
+        'Production-ready Next.js 16 boilerplate with TypeScript, Tailwind CSS, Zustand, and internationalization',
     keywords: [
-        'Next.js',
-        'React',
+        'Next.js 16',
+        'React 19',
         'TypeScript',
         'Tailwind CSS',
+        'Zustand',
         'i18n',
         'SEO',
         'Static Export',
-        'Boilerplate',
         'shadcn/ui',
+        'App Router',
+        'Server Components',
+        'Modern Web Development',
     ],
     author: 'Your Name',
     siteUrl: SITE_URL,
@@ -29,7 +30,6 @@ export const siteMetadata: SiteMetadata = {
     ogImage: `${SITE_URL}/ogImages/default-og.png`,
 };
 
-// Generate metadata for a specific locale
 export function generateMetadata(locale: Locale, pageTitle?: string): Metadata {
     const title = pageTitle ? `${pageTitle} | ${siteMetadata.siteName}` : siteMetadata.siteName;
 
@@ -100,11 +100,9 @@ export function generateMetadata(locale: Locale, pageTitle?: string): Metadata {
             ],
             apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
         },
-        manifest: '/site.webmanifest',
     };
 }
 
-// Helper to generate page-specific metadata
 export function generatePageMetadata({
     locale,
     title,

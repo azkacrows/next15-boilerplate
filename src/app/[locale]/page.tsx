@@ -29,10 +29,12 @@ export default async function HomePage({ params }: Props) {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="border-b border-border py-4">
-                <div className="container mx-auto px-4 flex justify-between items-center">
+            <header className="border-b border-border py-4 min-h-[72px]">
+                <div className="container mx-auto px-4 flex justify-between items-center gap-4 min-h-14">
                     <h1 className="text-2xl font-bold text-foreground">{t('homePage.heading')}</h1>
-                    <LocaleSwitcher />
+                    <div className="flex items-center gap-4">
+                        <LocaleSwitcher />
+                    </div>
                 </div>
             </header>
 
@@ -77,24 +79,40 @@ export default async function HomePage({ params }: Props) {
                         </div>
                     </div>
 
-                    <div className="mt-12 p-6 border border-primary/30 rounded-lg bg-primary/5">
-                        <h3 className="text-xl font-bold text-foreground mb-2">
-                            {t('homePage.routingGuide.title')}
-                        </h3>
-                        <p className="text-muted-foreground mb-4">
-                            {t('homePage.routingGuide.description')}
-                        </p>
-                        <Link
-                            href={`/${locale}/routing-guide`}
-                            className="inline-flex items-center text-primary hover:underline"
-                        >
-                            {t('homePage.routingGuide.link')} →
-                        </Link>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+                        <div className="p-6 border border-primary/30 rounded-lg bg-primary/5">
+                            <h3 className="text-xl font-bold text-foreground mb-2">
+                                {t('homePage.routingGuide.title')}
+                            </h3>
+                            <p className="text-muted-foreground mb-4">
+                                {t('homePage.routingGuide.description')}
+                            </p>
+                            <Link
+                                href={`/${locale}/routing-guide`}
+                                className="inline-flex items-center text-primary hover:underline"
+                            >
+                                {t('homePage.routingGuide.link')} →
+                            </Link>
+                        </div>
+                        <div className="p-6 border border-primary/30 rounded-lg bg-primary/5">
+                            <h3 className="text-xl font-bold text-foreground mb-2">
+                                Zustand Tutorial
+                            </h3>
+                            <p className="text-muted-foreground mb-4">
+                                Learn state management with Zustand
+                            </p>
+                            <Link
+                                href={`/${locale}/zustand-tutorial`}
+                                className="inline-flex items-center text-primary hover:underline"
+                            >
+                                View Tutorial →
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </main>
 
-            <footer className="border-t border-border py-8">
+            <footer className="border-t border-border py-8 min-h-[120px]">
                 <div className="container mx-auto px-4 text-center space-y-2">
                     <p className="text-sm text-muted-foreground">
                         {t('footer.copyright', { year: new Date().getFullYear() })}
@@ -108,9 +126,11 @@ export default async function HomePage({ params }: Props) {
 
 function FeatureCard({ title, icon }: { title: string; icon: string }) {
     return (
-        <div className="p-6 border border-border rounded-lg hover:border-primary/50 transition-colors bg-card">
-            <div className="text-4xl mb-3">{icon}</div>
-            <h4 className="font-semibold text-card-foreground">{title}</h4>
+        <div className="p-6 border border-border rounded-lg hover:border-primary/50 transition-colors bg-card min-h-[140px] flex flex-col">
+            <div className="text-4xl mb-3 leading-none" style={{ height: '48px' }}>
+                {icon}
+            </div>
+            <h4 className="font-semibold text-card-foreground flex-1">{title}</h4>
         </div>
     );
 }

@@ -16,7 +16,6 @@ export default function LocaleSwitcher() {
     function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
         const nextLocale = event.target.value;
 
-        // Replace the locale in the pathname
         const segments = pathname.split('/');
         segments[1] = nextLocale;
         const newPathname = segments.join('/');

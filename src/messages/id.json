@@ -1,8 +1,8 @@
 {
     "metadata": {
-        "title": "Next.js 15 Boilerplate",
-        "description": "Boilerplate Next.js 15 siap produksi dengan TypeScript, Tailwind CSS, dan internasionalisasi",
-        "keywords": "Next.js, React, TypeScript, Tailwind CSS, i18n, SEO"
+        "title": "Next.js 16 Boilerplate",
+        "description": "Boilerplate Next.js 16 siap produksi dengan TypeScript, Tailwind CSS, Zustand, dan internasionalisasi",
+        "keywords": "Next.js, React, TypeScript, Tailwind CSS, Zustand, i18n, SEO"
     },
     "common": {
         "welcome": "Selamat Datang",
@@ -38,8 +38,8 @@
     },
     "homePage": {
         "title": "Beranda",
-        "heading": "Next.js 15 Boilerplate",
-        "subtitle": "Starter siap produksi dengan TypeScript, Tailwind CSS & i18n",
+        "heading": "Next.js 16 Boilerplate",
+        "subtitle": "Starter siap produksi dengan TypeScript, Tailwind CSS, Zustand & i18n",
         "description": "Boilerplate Next.js modern dan lengkap yang dirancang untuk membangun aplikasi web yang dapat diskalakan dengan praktik terbaik.",
         "features": {
             "title": "Fitur",
@@ -59,16 +59,16 @@
         }
     },
     "errors": {
-        "pageNotFound": "Halaman tidak ditemukan",
-        "somethingWentWrong": "Terjadi kesalahan",
-        "tryAgain": "Coba lagi",
-        "goHome": "Kembali ke beranda",
         "400": "Permintaan Buruk",
         "401": "Tidak Terotorisasi",
         "403": "Terlarang",
         "404": "Tidak Ditemukan",
         "500": "Kesalahan Server Internal",
-        "503": "Layanan Tidak Tersedia"
+        "503": "Layanan Tidak Tersedia",
+        "pageNotFound": "Halaman tidak ditemukan",
+        "somethingWentWrong": "Terjadi kesalahan",
+        "tryAgain": "Coba lagi",
+        "goHome": "Kembali ke beranda"
     },
     "footer": {
         "copyright": "© {year} Hak cipta dilindungi.",
@@ -76,12 +76,12 @@
     },
     "gettingStarted": {
         "title": "Memulai",
-        "heading": "Memulai dengan Next.js 15 Boilerplate",
+        "heading": "Memulai dengan Next.js 16 Boilerplate",
         "description": "Pelajari cara mengatur dan mulai membangun dengan boilerplate ini",
         "intro": "Ikuti langkah-langkah berikut untuk menyiapkan lingkungan pengembangan Anda.",
         "prerequisites": {
             "title": "Prasyarat",
-            "node": "Node.js 18.17 atau lebih tinggi",
+            "node": "Node.js 20.0 atau lebih tinggi (diperlukan untuk Next.js 16)",
             "packageManager": "Package manager: npm, yarn, pnpm, atau bun"
         },
         "installation": {
@@ -136,12 +136,13 @@
             "nextjsDocs": "Dokumentasi Next.js",
             "typescriptDocs": "Dokumentasi TypeScript",
             "tailwindDocs": "Dokumentasi Tailwind CSS",
-            "nextIntlDocs": "Dokumentasi next-intl"
+            "nextIntlDocs": "Dokumentasi next-intl",
+            "zustandDocs": "Dokumentasi Zustand"
         }
     },
     "routingGuide": {
         "title": "Panduan Routing",
-        "heading": "Panduan Routing untuk Next.js 15",
+        "heading": "Panduan Routing untuk Next.js 16",
         "description": "Pelajari cara menggunakan App Router dan membuat route di aplikasi Next.js Anda",
         "intro": "Panduan ini menjelaskan sistem routing yang digunakan dalam boilerplate ini dan cara membuat route baru untuk proyek Anda.",
         "appRouter": {
@@ -193,6 +194,80 @@
         "examples": {
             "title": "Contoh Lengkap",
             "createPage": "Membuat halaman yang dilokalkan baru:"
+        }
+    },
+    "changelog": {
+        "title": "Log Perubahan",
+        "heading": "Log Perubahan Proyek",
+        "description": "Lacak semua perubahan, pembaruan, dan peningkatan utama pada boilerplate ini",
+        "intro": "Halaman ini mendokumentasikan semua perubahan penting pada boilerplate Next.js. Kami mengikuti prinsip Semantic Versioning dan Keep a Changelog.",
+        "backToHome": "Kembali ke Beranda",
+        "versions": {
+            "title": "Riwayat Versi",
+            "latest": "Terbaru"
+        }
+    },
+    "changelogPage": {
+        "title": "Log Perubahan",
+        "description": "Lacak semua perubahan, pembaruan, dan peningkatan utama pada boilerplate ini",
+        "subtitle": "Semua perubahan penting pada proyek ini didokumentasikan di sini",
+        "backToHome": "Kembali ke Beranda",
+        "footer": {
+            "copyright": "© {year} Hak cipta dilindungi.",
+            "madeWith": "Dibuat dengan ☕ dan 😴 oleh azkacrows"
+        }
+    },
+    "zustandTutorial": {
+        "title": "Tutorial Zustand",
+        "heading": "Manajemen State dengan Zustand",
+        "description": "Pelajari cara menggunakan Zustand untuk manajemen state di Next.js 16",
+        "intro": "Tutorial ini mencakup implementasi manajemen state Zustand dalam boilerplate ini, termasuk pola SSR-safe, penggunaan middleware, dan praktik terbaik.",
+        "backToHome": "Kembali ke Beranda",
+        "whatIsZustand": {
+            "title": "Apa itu Zustand?",
+            "description": "Zustand adalah solusi manajemen state yang kecil, cepat, dan skalabel. Menyediakan API sederhana dengan boilerplate minimal:",
+            "feature1": "Boilerplate minimal - tidak perlu provider atau reducer",
+            "feature2": "Dukungan TypeScript bawaan",
+            "feature3": "Dukungan middleware untuk persist, devtools, dan lainnya",
+            "feature4": "Sempurna untuk aplikasi kecil maupun besar"
+        },
+        "storeStructure": {
+            "title": "Struktur Store",
+            "description": "Store UI dalam boilerplate ini mendemonstrasikan pengaturan Zustand lengkap dengan middleware:"
+        },
+        "basicUsage": {
+            "title": "Penggunaan Dasar",
+            "description": "Menggunakan Zustand dalam komponen Anda sangat mudah. Cukup pilih state yang Anda butuhkan:"
+        },
+        "selectorHooks": {
+            "title": "Hook Selector",
+            "description": "Buat hook kustom untuk mengenkapsulasi state dan aksi terkait:",
+            "usage": "Penggunaan dalam komponen:"
+        },
+        "ssrSafety": {
+            "title": "Keamanan SSR",
+            "description": "Saat menggunakan Zustand dengan Next.js SSR, cegah ketidakcocokan hidrasi dengan memeriksa apakah store telah terhidrasi:"
+        },
+        "middleware": {
+            "title": "Middleware",
+            "description": "Boilerplate ini menggunakan dua middleware penting:",
+            "persist": "Middleware Persist",
+            "persistDescription": "Secara otomatis menyimpan state ke localStorage dan memulihkannya saat halaman dimuat",
+            "devtools": "Middleware Devtools",
+            "devtoolsDescription": "Mengaktifkan integrasi Redux DevTools untuk debugging (hanya development)"
+        },
+        "bestPractices": {
+            "title": "Praktik Terbaik",
+            "practice1": "Gunakan selector untuk berlangganan bagian state tertentu dan mencegah render ulang yang tidak perlu",
+            "practice2": "Buat hook kustom untuk state dan aksi terkait guna meningkatkan API komponen",
+            "practice3": "Selalu periksa status hidrasi saat menggunakan nilai yang dipersist dalam SSR",
+            "practice4": "Gunakan TypeScript untuk manajemen state yang type-safe",
+            "practice5": "Jaga store tetap fokus pada satu domain (UI, user, data, dll.)"
+        },
+        "resources": {
+            "title": "Sumber Daya",
+            "officialDocs": "Dokumentasi Zustand",
+            "github": "Repository GitHub"
         }
     }
 }

@@ -29,8 +29,8 @@ export default async function GettingStartedPage({ params }: Props) {
 
     return (
         <div className="min-h-screen flex flex-col">
-            <header className="border-b border-border py-4">
-                <div className="container mx-auto px-4 flex justify-between items-center">
+            <header className="border-b border-border py-4 min-h-[72px]">
+                <div className="container mx-auto px-4 flex justify-between items-center min-h-14">
                     <Link
                         href={`/${locale}`}
                         className="text-2xl font-bold text-foreground hover:text-primary"
@@ -81,8 +81,8 @@ export default async function GettingStartedPage({ params }: Props) {
                                     <pre className="bg-muted p-4 rounded overflow-x-auto">
                                         <code className="text-sm">
                                             git clone
-                                            https://github.com/azkacrows/next15-boilerplate.git
-                                            {'\n'}cd next15-boilerplate
+                                            https://github.com/azkacrows/next16-boilerplate.git
+                                            {'\n'}cd next16-boilerplate
                                         </code>
                                     </pre>
                                 </div>
@@ -149,7 +149,7 @@ export default async function GettingStartedPage({ params }: Props) {
                 </div>
             </main>
 
-            <footer className="border-t border-border py-8">
+            <footer className="border-t border-border py-8 min-h-[120px]">
                 <div className="container mx-auto px-4 text-center space-y-2">
                     <p className="text-sm text-muted-foreground">
                         {t('footer.copyright', { year: new Date().getFullYear() })}
