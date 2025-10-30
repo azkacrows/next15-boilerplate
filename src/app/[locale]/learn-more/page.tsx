@@ -189,6 +189,16 @@ export default async function LearnMorePage({ params }: Props) {
                                             {t('learnMore.resources.nextIntlDocs')}
                                         </a>
                                     </li>
+                                    <li>
+                                        <a
+                                            href="https://zustand-demo.pmnd.rs/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-primary hover:underline"
+                                        >
+                                            {t('learnMore.resources.zustandDocs')}
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </section>
