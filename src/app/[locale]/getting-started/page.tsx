@@ -80,9 +80,8 @@ export default async function GettingStartedPage({ params }: Props) {
                                     </p>
                                     <pre className="bg-muted p-4 rounded overflow-x-auto">
                                         <code className="text-sm">
-                                            git clone
-                                            https://github.com/azkacrows/next16-boilerplate.git
-                                            {'\n'}cd next16-boilerplate
+                                            npx create-next-app@latest [project-name] -e https://github.com/azkacrows/next16-boilerplate
+                                            {'\n'}cd [project-name]
                                         </code>
                                     </pre>
                                 </div>

@@ -54,10 +54,10 @@ The following software must be installed on your development machine:
 
 ### Installation Procedure
 
-1. Clone the repository to your local environment:
+1. Bootstrap a new project using the Next.js template:
 ```bash
-git clone https://github.com/azkacrows/next16-boilerplate.git
-cd next16-boilerplate
+npx create-next-app@latest [project-name] -e https://github.com/azkacrows/next16-boilerplate
+cd [project-name]
 ```
 
 2. Install project dependencies:

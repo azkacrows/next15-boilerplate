@@ -92,7 +92,7 @@
         },
         "installation": {
             "title": "Installation",
-            "step1": "1. Clone the repository:",
+            "step1": "1. Create a new project using the Next.js template:",
             "step2": "2. Install dependencies:",
             "step3": "3. Start the development server:"
         },

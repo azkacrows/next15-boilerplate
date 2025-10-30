@@ -92,7 +92,7 @@
         },
         "installation": {
             "title": "Instalasi",
-            "step1": "1. Clone repository:",
+            "step1": "1. Buat proyek baru menggunakan template Next.js:",
             "step2": "2. Install dependencies:",
             "step3": "3. Jalankan development server:"
         },
