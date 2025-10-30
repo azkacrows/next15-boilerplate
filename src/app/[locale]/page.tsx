@@ -96,16 +96,16 @@ export default async function HomePage({ params }: Props) {
                         </div>
                         <div className="p-6 border border-primary/30 rounded-lg bg-primary/5">
                             <h3 className="text-xl font-bold text-foreground mb-2">
-                                Zustand Tutorial
+                                {t('homePage.zustandTutorial.title')}
                             </h3>
                             <p className="text-muted-foreground mb-4">
-                                Learn state management with Zustand
+                                {t('homePage.zustandTutorial.description')}
                             </p>
                             <Link
                                 href={`/${locale}/zustand-tutorial`}
                                 className="inline-flex items-center text-primary hover:underline"
                             >
-                                View Tutorial →
+                                {t('homePage.zustandTutorial.link')} →
                             </Link>
                         </div>
                     </div>

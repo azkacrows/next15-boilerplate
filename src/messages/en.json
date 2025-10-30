@@ -48,6 +48,7 @@
             "i18n": "Full internationalization support",
             "seo": "SEO-ready with metadata API",
             "staticExport": "Static export configured",
+            "zustand": "Zustand for state management",
             "performance": "Optimized for performance"
         },
         "getStarted": "Get Started",
@@ -56,6 +57,11 @@
             "title": "Need Help with Routing?",
             "description": "Learn how to use App Router and create routes in your application",
             "link": "View Routing Guide"
+        },
+        "zustandTutorial": {
+            "title": "Zustand Tutorial",
+            "description": "Learn state management with Zustand",
+            "link": "View Tutorial"
         }
     },
     "errors": {

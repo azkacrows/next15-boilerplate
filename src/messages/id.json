@@ -48,7 +48,8 @@
             "i18n": "Dukungan internasionalisasi penuh",
             "seo": "Siap SEO dengan metadata API",
             "staticExport": "Static export terkonfigurasi",
-            "performance": "Dioptimalkan untuk performa"
+            "zustand": "Zustand untuk manajemen state",
+            "performance": "Dioptimalkan untuk kinerja"
         },
         "getStarted": "Memulai",
         "learnMore": "Pelajari Lebih Lanjut",
@@ -56,6 +57,11 @@
             "title": "Butuh Bantuan dengan Routing?",
             "description": "Pelajari cara menggunakan App Router dan membuat route di aplikasi Anda",
             "link": "Lihat Panduan Routing"
+        },
+        "zustandTutorial": {
+            "title": "Tutorial Zustand",
+            "description": "Pelajari manajemen state dengan Zustand",
+            "link": "Lihat Tutorial"
         }
     },
     "errors": {

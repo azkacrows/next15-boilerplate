@@ -48,7 +48,8 @@
             "i18n": "完全な国際化サポート",
             "seo": "Metadata APIでSEO対応",
             "staticExport": "静的エクスポート設定済み",
-            "performance": "パフォーマンス最適化"
+            "performance": "パフォーマンスを最適化",
+            "zustand": "状態管理のための Zustand"
         },
         "getStarted": "始める",
         "learnMore": "詳しく見る",
@@ -56,19 +57,24 @@
             "title": "ルーティングのヘルプが必要ですか？",
             "description": "App Routerの使用方法とアプリケーションでルートを作成する方法を学ぶ",
             "link": "ルーティングガイドを見る"
+        },
+        "zustandTutorial": {
+            "description": "Zustand で状態管理を学ぶ",
+            "link": "チュートリアルを見る",
+            "title": "ズスタンドのチュートリアル"
         }
     },
     "errors": {
-        "pageNotFound": "ページが見つかりません",
-        "somethingWentWrong": "何か問題が発生しました",
-        "tryAgain": "もう一度試す",
-        "goHome": "ホームへ戻る",
         "400": "不正なリクエスト",
         "401": "認証が必要です",
         "403": "アクセスが禁止されています",
         "404": "見つかりません",
         "500": "サーバーエラー",
-        "503": "サービス利用不可"
+        "503": "サービス利用不可",
+        "pageNotFound": "ページが見つかりません",
+        "somethingWentWrong": "何か問題が発生しました",
+        "tryAgain": "もう一度試す",
+        "goHome": "ホームへ戻る"
     },
     "footer": {
         "copyright": "© {year} すべての権利保護。",
