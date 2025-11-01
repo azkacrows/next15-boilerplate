@@ -1,8 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import { type Locale, locales } from '@/types/i18n';
-import { generatePageMetadata } from '@/shared/constants/metadata';
-import LocaleSwitcher from '@/shared/components/LocaleSwitcher';
-import Link from 'next/link';
+import { generatePageMetadata } from '@/config/metadata';
+import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 type Props = {
     params: Promise<{ locale: string }>;
@@ -51,18 +50,22 @@ export default async function HomePage({ params }: Props) {
                     </div>
 
                     <div className="flex gap-4 justify-center">
-                        <Link
-                            href={`/${locale}/getting-started`}
+                        <a
+                            href="https://github.com/azkacrows/next16-boilerplate"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
                         >
                             {t('homePage.getStarted')}
-                        </Link>
-                        <Link
-                            href={`/${locale}/learn-more`}
+                        </a>
+                        <a
+                            href="https://nextjs.org/docs"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="px-6 py-3 border border-border text-foreground rounded-lg hover:bg-accent transition-colors"
                         >
                             {t('homePage.learnMore')}
-                        </Link>
+                        </a>
                     </div>
 
                     <div className="mt-16">
@@ -79,36 +82,6 @@ export default async function HomePage({ params }: Props) {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
-                        <div className="p-6 border border-primary/30 rounded-lg bg-primary/5">
-                            <h3 className="text-xl font-bold text-foreground mb-2">
-                                {t('homePage.routingGuide.title')}
-                            </h3>
-                            <p className="text-muted-foreground mb-4">
-                                {t('homePage.routingGuide.description')}
-                            </p>
-                            <Link
-                                href={`/${locale}/routing-guide`}
-                                className="inline-flex items-center text-primary hover:underline"
-                            >
-                                {t('homePage.routingGuide.link')} →
-                            </Link>
-                        </div>
-                        <div className="p-6 border border-primary/30 rounded-lg bg-primary/5">
-                            <h3 className="text-xl font-bold text-foreground mb-2">
-                                {t('homePage.zustandTutorial.title')}
-                            </h3>
-                            <p className="text-muted-foreground mb-4">
-                                {t('homePage.zustandTutorial.description')}
-                            </p>
-                            <Link
-                                href={`/${locale}/zustand-tutorial`}
-                                className="inline-flex items-center text-primary hover:underline"
-                            >
-                                {t('homePage.zustandTutorial.link')} →
-                            </Link>
-                        </div>
-                    </div>
                 </div>
             </main>
 

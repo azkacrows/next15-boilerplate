@@ -3,7 +3,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
 import { locales, type Locale, type LayoutProps } from '@/types';
-import { generateMetadata as generateSiteMetadata } from '@/shared/constants/metadata';
+import { generateMetadata as generateSiteMetadata } from '@/config/metadata';
 import '../styles/globals.css';
 
 const inter = Inter({

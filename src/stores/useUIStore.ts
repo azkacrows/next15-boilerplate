@@ -1,25 +1,9 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
-export interface Notification {
-    id: string;
-    message: string;
-    type: 'info' | 'success' | 'warning' | 'error';
-    dismissible: boolean;
-}
-
 interface UIState {
-    isSidebarOpen: boolean;
-    setSidebarOpen: (isOpen: boolean) => void;
-    toggleSidebar: () => void;
-
-    notification: Notification | null;
-    setNotification: (notification: Notification | null) => void;
-    dismissNotification: () => void;
-
-    isMobileMenuOpen: boolean;
-    setMobileMenuOpen: (isOpen: boolean) => void;
-    toggleMobileMenu: () => void;
+    theme: 'light' | 'dark' | 'system';
+    setTheme: (theme: 'light' | 'dark' | 'system') => void;
 
     isLoading: boolean;
     setLoading: (isLoading: boolean) => void;
@@ -29,9 +13,7 @@ interface UIState {
 }
 
 const initialState = {
-    isSidebarOpen: true,
-    notification: null,
-    isMobileMenuOpen: false,
+    theme: 'system' as const,
     isLoading: false,
     _hasHydrated: false,
 };
@@ -42,36 +24,8 @@ export const useUIStore = create<UIState>()(
             (set) => ({
                 ...initialState,
 
-                setSidebarOpen: (isOpen: boolean) => {
-                    set({ isSidebarOpen: isOpen }, false, 'setSidebarOpen');
-                },
-
-                toggleSidebar: () => {
-                    set(
-                        (state) => ({ isSidebarOpen: !state.isSidebarOpen }),
-                        false,
-                        'toggleSidebar'
-                    );
-                },
-
-                setNotification: (notification: Notification | null) => {
-                    set({ notification }, false, 'setNotification');
-                },
-
-                dismissNotification: () => {
-                    set({ notification: null }, false, 'dismissNotification');
-                },
-
-                setMobileMenuOpen: (isOpen: boolean) => {
-                    set({ isMobileMenuOpen: isOpen }, false, 'setMobileMenuOpen');
-                },
-
-                toggleMobileMenu: () => {
-                    set(
-                        (state) => ({ isMobileMenuOpen: !state.isMobileMenuOpen }),
-                        false,
-                        'toggleMobileMenu'
-                    );
+                setTheme: (theme: 'light' | 'dark' | 'system') => {
+                    set({ theme }, false, 'setTheme');
                 },
 
                 setLoading: (isLoading: boolean) => {
@@ -85,7 +39,7 @@ export const useUIStore = create<UIState>()(
             {
                 name: 'ui-store',
                 partialize: (state) => ({
-                    isSidebarOpen: state.isSidebarOpen,
+                    theme: state.theme,
                 }),
                 onRehydrateStorage: () => (state) => {
                     state?.setHasHydrated(true);
@@ -99,22 +53,15 @@ export const useUIStore = create<UIState>()(
     )
 );
 
+// Selector hooks for common patterns
 export const useHasHydrated = (): boolean => {
     return useUIStore((state) => state._hasHydrated);
 };
 
-export const useNotification = () =>
+export const useTheme = () =>
     useUIStore((state) => ({
-        notification: state.notification,
-        setNotification: state.setNotification,
-        dismiss: state.dismissNotification,
-    }));
-
-export const useMobileMenu = () =>
-    useUIStore((state) => ({
-        isOpen: state.isMobileMenuOpen,
-        setOpen: state.setMobileMenuOpen,
-        toggle: state.toggleMobileMenu,
+        theme: state.theme,
+        setTheme: state.setTheme,
     }));
 
 export const useLoading = () =>
