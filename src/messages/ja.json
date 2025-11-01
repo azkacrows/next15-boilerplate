@@ -1,7 +1,7 @@
 {
     "metadata": {
         "title": "Next.js 16 ボイラープレート",
-        "description": "TypeScript、Tailwind CSS、Zustand、国際化対応のプロダクション対応 Next.js 16 ボイラープレート",
+        "description": "TypeScript、Tailwind CSS、Zustand、国際化対応の本番環境対応Next.js 16ボイラープレート",
         "keywords": "Next.js, React, TypeScript, Tailwind CSS, Zustand, i18n, SEO"
     },
     "common": {
@@ -20,13 +20,13 @@
         "previous": "前へ",
         "search": "検索",
         "filter": "フィルター",
-        "sort": "並び替え",
+        "sort": "並べ替え",
         "viewMore": "もっと見る",
-        "viewLess": "折りたたむ"
+        "viewLess": "表示を減らす"
     },
     "navigation": {
         "home": "ホーム",
-        "about": "私たちについて",
+        "about": "概要",
         "contact": "お問い合わせ",
         "blog": "ブログ",
         "products": "製品",
@@ -39,241 +39,35 @@
     "homePage": {
         "title": "ホーム",
         "heading": "Next.js 16 ボイラープレート",
-        "subtitle": "TypeScript、Tailwind CSS、Zustand、i18n対応のプロダクション対応スターター",
-        "description": "ベストプラクティスを採用したスケーラブルなウェブアプリケーションを構築するために設計された、モダンで充実したNext.jsボイラープレート。",
+        "subtitle": "TypeScript、Tailwind CSS、Zustand、i18n対応の本番環境対応スターター",
+        "description": "ベストプラクティスに基づいてスケーラブルなWebアプリケーションを構築するために設計された、モダンで機能豊富なNext.jsボイラープレート。",
         "features": {
             "title": "機能",
-            "typescript": "StrictモードのTypeScript",
+            "typescript": "strictモードのTypeScript",
             "tailwind": "カスタムテーマ対応のTailwind CSS 4",
             "i18n": "完全な国際化サポート",
-            "seo": "Metadata APIでSEO対応",
+            "seo": "メタデータAPIでSEO対応",
             "staticExport": "静的エクスポート設定済み",
-            "performance": "パフォーマンスを最適化",
-            "zustand": "状態管理のための Zustand"
+            "zustand": "Zustandによる状態管理",
+            "performance": "パフォーマンス最適化済み"
         },
         "getStarted": "始める",
-        "learnMore": "詳しく見る",
-        "routingGuide": {
-            "title": "ルーティングのヘルプが必要ですか？",
-            "description": "App Routerの使用方法とアプリケーションでルートを作成する方法を学ぶ",
-            "link": "ルーティングガイドを見る"
-        },
-        "zustandTutorial": {
-            "description": "Zustand で状態管理を学ぶ",
-            "link": "チュートリアルを見る",
-            "title": "ズスタンドのチュートリアル"
-        }
+        "learnMore": "詳細を見る"
     },
     "errors": {
         "400": "不正なリクエスト",
-        "401": "認証が必要です",
-        "403": "アクセスが禁止されています",
+        "401": "認証されていません",
+        "403": "禁止されています",
         "404": "見つかりません",
-        "500": "サーバーエラー",
+        "500": "内部サーバーエラー",
         "503": "サービス利用不可",
         "pageNotFound": "ページが見つかりません",
-        "somethingWentWrong": "何か問題が発生しました",
-        "tryAgain": "もう一度試す",
-        "goHome": "ホームへ戻る"
+        "somethingWentWrong": "問題が発生しました",
+        "tryAgain": "もう一度お試しください",
+        "goHome": "ホームページに戻る"
     },
     "footer": {
-        "copyright": "© {year} すべての権利保護。",
-        "madeWith": "azkacrowsが☕と😴で作成"
-    },
-    "gettingStarted": {
-        "title": "始める",
-        "heading": "Next.js 16 ボイラープレートを始める",
-        "description": "このボイラープレートを設定して構築を始める方法を学ぶ",
-        "intro": "次の手順に従って、開発環境を設定してください。",
-        "prerequisites": {
-            "title": "前提条件",
-            "node": "Node.js 20.0 以上（Next.js 16 に必要）",
-            "packageManager": "パッケージマネージャー：npm、yarn、pnpm、またはbun"
-        },
-        "installation": {
-            "title": "インストール",
-            "step1": "1. Next.js テンプレートを使用して新規プロジェクトを作成：",
-            "step2": "2. 依存関係をインストール：",
-            "step3": "3. 開発サーバーを起動："
-        },
-        "nextSteps": {
-            "title": "次のステップ",
-            "explore": "プロジェクト構造を探索し、フォルダー編成を理解する",
-            "customize": "テーマとスタイルをブランドに合わせてカスタマイズする",
-            "build": "機能とページの構築を開始する"
-        }
-    },
-    "learnMore": {
-        "title": "詳しく見る",
-        "heading": "このボイラープレートについて詳しく見る",
-        "description": "このプロジェクトで使用されている技術とベストプラクティスを発見する",
-        "intro": "このボイラープレートは、最新のWeb開発技術で構築され、業界のベストプラクティスに従っています。",
-        "architecture": {
-            "title": "アーキテクチャ",
-            "description": "プロジェクトは、明確な関心の分離を持つ機能ベースのアーキテクチャに従っています：",
-            "feature1": "直感的なファイルベースのルーティングのApp Router",
-            "feature2": "最適なパフォーマンスのためのデフォルトServer Components",
-            "feature3": "柔軟なデプロイオプションのための静的エクスポート機能"
-        },
-        "technologies": {
-            "title": "コアテクノロジー",
-            "nextjs": "現代的なWebアプリケーションを構築するためのApp RouterとServer Componentsを備えたReactフレームワーク",
-            "typescript": "包括的な型安全性と優れた開発者体験のためにStrictモードが有効",
-            "tailwind": "カスタムテーマサポート付きの最新ユーティリティファーストCSSフレームワーク",
-            "i18n": "型安全な翻訳を使用した完全な国際化サポート"
-        },
-        "features": {
-            "title": "主要機能",
-            "staticExport": {
-                "title": "静的エクスポート",
-                "description": "静的サイト生成用に事前設定され、任意の静的ホスティングプラットフォームへのデプロイを可能にする"
-            },
-            "seo": {
-                "title": "SEO最適化",
-                "description": "Metadata API、robots.txt、サイトマップ生成を使用した組み込みSEOで、検索エンジンの可視性を向上"
-            },
-            "performance": {
-                "title": "パフォーマンス",
-                "description": "Zero CLS、効率的なコード分割、最小限のJavaScriptでCore Web Vitalsに最適化"
-            }
-        },
-        "resources": {
-            "title": "ドキュメントとリソース",
-            "nextjsDocs": "Next.jsドキュメント",
-            "typescriptDocs": "TypeScriptドキュメント",
-            "tailwindDocs": "Tailwind CSSドキュメント",
-            "nextIntlDocs": "next-intlドキュメント",
-            "zustandDocs": "Zustandドキュメント"
-        }
-    },
-    "routingGuide": {
-        "title": "ルーティングガイド",
-        "heading": "Next.js 16 のルーティングガイド",
-        "description": "App Routerの使用方法とNext.jsアプリケーションでルートを作成する方法を学ぶ",
-        "intro": "このガイドでは、このボイラープレートで使用されているルーティングシステムと、プロジェクトの新しいルートを作成する方法を説明します。",
-        "appRouter": {
-            "title": "App Router構造",
-            "description": "このプロジェクトは、ファイルシステムベースのルーティングを使用するNext.js App Routerを使用しています。各フォルダーはルートセグメントを表します。"
-        },
-        "dynamicRoutes": {
-            "title": "ダイナミックルート",
-            "description": "フォルダー名に角括弧を使用してダイナミックルートを作成します：",
-            "example1": {
-                "title": "単一ダイナミックセグメント",
-                "description": "/blog/hello-world、/blog/nextjs-guideのようなルートを作成します"
-            },
-            "example2": {
-                "title": "複数のダイナミックセグメント",
-                "description": "/products/electronics/123、/products/clothing/456のようなルートを作成します"
-            }
-        },
-        "navigation": {
-            "title": "ナビゲーション方法",
-            "link": {
-                "title": "Linkコンポーネントの使用",
-                "description": "クライアントサイドナビゲーションに推奨される方法："
-            },
-            "router": {
-                "title": "useRouterフックの使用",
-                "description": "クライアントコンポーネントでのプログラマティックナビゲーション用："
-            },
-            "useLocale": {
-                "title": "カスタムuseLocaleフックの使用",
-                "description": "このボイラープレートは、ロケール対応ナビゲーション用のカスタムフックを提供します："
-            }
-        },
-        "i18nRouting": {
-            "title": "国際化ルーティング",
-            "description": "すべてのルートに自動的にロケール接頭辞が付きます：",
-            "urlStructure": "URL構造：",
-            "automatic": "自動ロケール検出：",
-            "automaticDescription": "ロケールスイッチャーは、現在のパスを保持しながら自動的にURLを更新します。"
-        },
-        "bestPractices": {
-            "title": "ベストプラクティス",
-            "practice1": "prefetchingの恩恵を受けるため、内部ナビゲーションには必ずLinkコンポーネントを使用する",
-            "practice2": "静的エクスポートを有効にするため、すべてのダイナミックルートに対してgenerateStaticParamsを使用する",
-            "practice3": "デフォルトでServer Componentsを使用し、必要な場合のみ'use client'を使用する",
-            "practice4": "i18nサポートのため、ページコンポーネントに必ずlocaleパラメーターを含める",
-            "practice5": "ロケール対応のクライアントサイドナビゲーションにはカスタムuseLocaleフックを使用する"
-        },
-        "examples": {
-            "title": "完全な例",
-            "createPage": "新しいローカライズされたページを作成："
-        }
-    },
-    "changelog": {
-        "title": "変更履歴",
-        "heading": "プロジェクト変更履歴",
-        "description": "このボイラープレートのすべての主要な変更、更新、改善を追跡",
-        "intro": "このページはNext.jsボイラープレートのすべての重要な変更を文書化しています。Semantic VersioningとKeep a Changelogの原則に従っています。",
-        "backToHome": "ホームに戻る",
-        "versions": {
-            "title": "バージョン履歴",
-            "latest": "最新"
-        }
-    },
-    "changelogPage": {
-        "title": "変更履歴",
-        "description": "このボイラープレートのすべての主要な変更、更新、改善を追跡",
-        "subtitle": "このプロジェクトのすべての重要な変更がここに文書化されています",
-        "backToHome": "ホームに戻る",
-        "footer": {
-            "copyright": "© {year} 著作権所有。",
-            "madeWith": "☕と😴でazkacrowsによって作成"
-        }
-    },
-    "zustandTutorial": {
-        "title": "Zustandチュートリアル",
-        "heading": "Zustandによる状態管理",
-        "description": "Next.js 16でZustandを使用した状態管理の方法を学ぶ",
-        "intro": "このチュートリアルでは、このボイラープレートでのZustand状態管理の実装、SSR対応パターン、ミドルウェアの使用法、ベストプラクティスを説明します。",
-        "backToHome": "ホームに戻る",
-        "whatIsZustand": {
-            "title": "Zustandとは？",
-            "description": "Zustandは小さく、高速でスケーラブルな状態管理ソリューションです。最小限のボイラープレートでシンプルなAPIを提供します：",
-            "feature1": "最小限のボイラープレート - プロバイダーやリデューサーは不要",
-            "feature2": "TypeScriptサポートを標準装備",
-            "feature3": "persist、devtoolsなどのミドルウェアサポート",
-            "feature4": "小規模から大規模なアプリケーションに最適"
-        },
-        "storeStructure": {
-            "title": "ストア構造",
-            "description": "このボイラープレートのUIストアは、ミドルウェアを使用した完全なZustandセットアップを示しています："
-        },
-        "basicUsage": {
-            "title": "基本的な使用方法",
-            "description": "コンポーネントでZustandを使用するのは簡単です。必要な状態を選択するだけです："
-        },
-        "selectorHooks": {
-            "title": "セレクターフック",
-            "description": "関連する状態とアクションをカプセル化するカスタムフックを作成します：",
-            "usage": "コンポーネントでの使用："
-        },
-        "ssrSafety": {
-            "title": "SSRの安全性",
-            "description": "Next.js SSRでZustandを使用する場合、ストアがハイドレートされたかどうかを確認してハイドレーションの不一致を防ぎます："
-        },
-        "middleware": {
-            "title": "ミドルウェア",
-            "description": "このボイラープレートは2つの重要なミドルウェアを使用します：",
-            "persist": "Persistミドルウェア",
-            "persistDescription": "状態を自動的にlocalStorageに保存し、ページ読み込み時に復元します",
-            "devtools": "Devtoolsミドルウェア",
-            "devtoolsDescription": "デバッグのためのRedux DevTools統合を有効にします（開発時のみ）"
-        },
-        "bestPractices": {
-            "title": "ベストプラクティス",
-            "practice1": "セレクターを使用して特定の状態スライスに登録し、不要な再レンダリングを防ぐ",
-            "practice2": "関連する状態とアクションのカスタムフックを作成してコンポーネントAPIを改善する",
-            "practice3": "SSRでpersist値を使用する場合は常にハイドレーション状態を確認する",
-            "practice4": "型安全な状態管理のためにTypeScriptを使用する",
-            "practice5": "ストアは単一のドメイン（UI、ユーザー、データなど）に集中させる"
-        },
-        "resources": {
-            "title": "リソース",
-            "officialDocs": "Zustandドキュメント",
-            "github": "GitHubリポジトリ"
-        }
+        "copyright": "© {year} All rights reserved.",
+        "madeWith": "☕と😴でazkacrowsが作成"
     }
 }
