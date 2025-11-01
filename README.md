@@ -121,13 +121,6 @@ next16-boilerplate/
 │       ├── i18n.ts               # Locale types
 │       ├── index.ts              # Type exports
 │       └── metadata.ts           # Metadata types
-│   ├── accessibility.spec.ts    # Accessibility tests
-│   ├── build-smoke.spec.ts      # Build smoke tests
-│   ├── homepage.spec.ts         # Homepage tests
-│   ├── i18n.spec.ts            # Internationalization tests
-│   ├── navigation.spec.ts       # Navigation tests
-│   ├── responsive.spec.ts       # Responsive design tests
-│   └── seo.spec.ts             # SEO tests
 ├── public/                      # Static assets
 ├── next.config.ts               # Next.js configuration
 ├── tsconfig.json                # TypeScript configuration
