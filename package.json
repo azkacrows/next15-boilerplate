@@ -1,6 +1,6 @@
 {
   "name": "next16-boilerplate",
-  "version": "1.2.0",
+  "version": "2.2.0",
   "private": true,
   "engines": {
     "node": ">=20.0.0",
@@ -16,13 +16,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "type-check": "tsc --noEmit",
-    "validate": "npm run type-check && npm run lint && npm run format:check",
-    "test": "playwright test",
-    "test:ui": "playwright test --ui",
-    "test:headed": "playwright test --headed",
-    "test:debug": "playwright test --debug",
-    "test:report": "playwright show-report",
-    "test:smoke": "playwright test tests/homepage.spec.ts tests/i18n.spec.ts --reporter=line"
+    "validate": "npm run type-check && npm run lint && npm run format:check"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -35,7 +29,6 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
-    "@playwright/test": "^1.56.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.20",
     "@types/react": "19.2.2",
