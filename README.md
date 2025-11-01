@@ -11,10 +11,9 @@ This boilerplate provides a complete foundation for modern web development, inco
 **Core Technologies**
 - Next.js 16 with App Router and React Server Components
 - TypeScript with strict mode enabled for comprehensive type safety
-- Tailwind CSS 4 for utility-first styling with custom theme support
+- Tailwind CSS 4 for utility-first styling
 - next-intl for complete internationalization functionality
 - Zustand for lightweight, type-safe state management
-- shadcn/ui compatible architecture for component integration
 - Playwright for end-to-end testing
 - Lucide React for professional SVG icons
 
@@ -23,11 +22,10 @@ This boilerplate provides a complete foundation for modern web development, inco
 - SEO optimization with Metadata API, robots.txt, and sitemap generation
 - Multi-language support (English, Indonesian, Japanese) with extensible architecture
 - Type-safe internationalization system with full TypeScript integration
-- Performance optimizations with CLS prevention (target < 0.05)
-- SSR-safe state management with Zustand
-- Accessibility compliance with semantic HTML and ARIA labels
-- Scalable folder structure based on feature-driven development
-- Code quality enforcement through ESLint and TypeScript
+- Zustand state management with persistence
+- Semantic HTML structure
+- Scalable folder structure
+- TypeScript strict mode for type safety
 
 ## Table of Contents
 
@@ -102,27 +100,27 @@ next16-boilerplate/
 │   │   ├── robots.ts             # Robots.txt generator
 │   │   ├── sitemap.ts            # Sitemap.xml generator
 │   │   └── styles/
-│   │       └── globals.css       # Tailwind + custom CSS
-│   ├── i18n/
+│   │       └── globals.css       # Tailwind CSS configuration
+│   ├── components/               # React components
+│   │   └── LocaleSwitcher/       # Language switcher component
+│   ├── config/                   # Configuration files
+│   │   └── metadata.ts           # SEO metadata configuration
+│   ├── hooks/                    # Custom React hooks
+│   │   └── useLocale.ts          # Locale navigation hook
+│   ├── i18n/                     # Internationalization
 │   │   ├── routing.ts            # i18n routing configuration
 │   │   └── request.ts            # Request-scoped i18n config
+│   ├── lib/                      # Utility functions
+│   │   └── utils.ts              # Common utilities
 │   ├── messages/                 # Translation files
-│   │   ├── en.json              # English translations
-│   │   ├── id.json              # Indonesian translations
-│   │   └── ja.json              # Japanese translations
-│   ├── shared/
-│   │   ├── components/          # Shared UI components
-│   │   │   └── LocaleSwitcher/  # Language switcher
-│   │   ├── constants/
-│   │   │   └── metadata.ts      # SEO metadata configuration
-│   │   ├── hooks/               # Custom React hooks
-│   │   └── lib/
-│   │       └── utils.ts         # Utility functions
-│   ├── stores/                  # Zustand state stores
-│   │   └── useUIStore.ts        # UI state management
-│   └── types/                   # TypeScript type definitions
-│       ├── i18n.ts              # Locale types
-│       └── metadata.ts          # Metadata types
+│   │   ├── en.json               # English translations
+│   │   ├── id.json               # Indonesian translations
+│   │   └── ja.json               # Japanese translations
+│   ├── stores/                   # Zustand state stores
+│   │   └── useUIStore.ts         # UI state management
+│   └── types/                    # TypeScript type definitions
+│       ├── i18n.ts               # Locale types
+│       └── metadata.ts           # Metadata types
 ├── public/                      # Static assets
 ├── next.config.ts               # Next.js configuration
 ├── tsconfig.json                # TypeScript configuration
@@ -131,16 +129,19 @@ next16-boilerplate/
 
 ### Directory Structure Rationale
 
-The project follows a feature-based architecture with clear separation of concerns:
+The project follows a clean architecture with clear separation of concerns:
 
 - **`/app`**: Contains Next.js App Router pages, layouts, and route handlers
-- **`/shared`**: Houses reusable components, utilities, and constants accessible across features
-- **`/features`**: Reserved for feature-specific modules as the application scales
-- **`/types`**: Centralized TypeScript type definitions and interfaces
+- **`/components`**: Reusable React components
+- **`/config`**: Application configuration files
+- **`/hooks`**: Custom React hooks
 - **`/i18n`**: Internationalization routing and request configuration
+- **`/lib`**: Utility functions and helpers
 - **`/messages`**: Translation files in JSON format for each supported locale
+- **`/stores`**: Zustand state management stores
+- **`/types`**: Centralized TypeScript type definitions and interfaces
 
-This structure promotes modularity, maintainability, and scalability as the application grows.
+This structure provides a solid foundation for building scalable applications.
 
 ## Internationalization
 
@@ -459,7 +460,7 @@ This boilerplate is built upon the following open-source technologies:
 - [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript superset
-- [shadcn/ui](https://ui.shadcn.com/) - Re-usable component architecture inspiration
+- [Playwright](https://playwright.dev/) - End-to-end testing framework
 
 ---
 
