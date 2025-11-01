@@ -14,7 +14,6 @@ This boilerplate provides a complete foundation for modern web development, inco
 - Tailwind CSS 4 for utility-first styling
 - next-intl for complete internationalization functionality
 - Zustand for lightweight, type-safe state management
-- Playwright for end-to-end testing
 - Lucide React for professional SVG icons
 
 **Key Features**
@@ -25,7 +24,6 @@ This boilerplate provides a complete foundation for modern web development, inco
 - Zustand state management with persistence (theme and loading state)
 - Clean, minimal folder structure
 - TypeScript strict mode for type safety
-- Comprehensive Playwright test suite
 
 ## Table of Contents
 
@@ -123,7 +121,6 @@ next16-boilerplate/
 │       ├── i18n.ts               # Locale types
 │       ├── index.ts              # Type exports
 │       └── metadata.ts           # Metadata types
-├── tests/                       # Playwright e2e tests
 │   ├── accessibility.spec.ts    # Accessibility tests
 │   ├── build-smoke.spec.ts      # Build smoke tests
 │   ├── homepage.spec.ts         # Homepage tests
@@ -172,8 +169,6 @@ The project follows a clean, flat architecture with clear separation of concerns
   - `metadata.ts` - SEO metadata types
   - `index.ts` - Centralized type exports
 
-- **`/tests`**: Comprehensive Playwright e2e test suite
-
 This structure provides a solid foundation for building scalable applications.
 
 ## Architecture Decisions
@@ -205,14 +200,6 @@ Zustand is used for client-side state management with:
 - **DevTools**: Redux DevTools integration in development
 - **Hydration safety**: Includes hydration state tracking for SSR compatibility
 - **Minimal footprint**: Only ~8KB gzipped
-
-### Testing Strategy
-Comprehensive Playwright test suite covering:
-- **Accessibility**: WCAG compliance checks
-- **Internationalization**: Locale switching and translation verification
-- **SEO**: Meta tags, robots.txt, and sitemap validation
-- **Responsive Design**: Mobile, tablet, and desktop viewport testing
-- **Build Smoke Tests**: Ensures production build works correctly
 
 ## Internationalization
 
@@ -531,7 +518,6 @@ This boilerplate is built upon the following open-source technologies:
 - [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript superset
-- [Playwright](https://playwright.dev/) - End-to-end testing framework
 
 ---
 
