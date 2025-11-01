@@ -21,10 +21,6 @@ const inter = Inter({
     ],
 });
 
-export async function generateStaticParams() {
-    return locales.map((locale) => ({ locale }));
-}
-
 export async function generateMetadata({ params }: LayoutProps) {
     const { locale } = await params;
     return generateSiteMetadata(locale as Locale);

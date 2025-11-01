@@ -2,7 +2,7 @@
 
 A production-ready starter template built with Next.js 16, TypeScript, Tailwind CSS 4, and comprehensive internationalization support. This boilerplate is designed for building scalable, performant web applications with modern development practices and static export capabilities.
 
-> **Note:** This boilerplate was created for my learning purposes and to serve as a reference for modern Next.js development best practices. It demonstrates a centralized type system, comprehensive testing, and production-ready architecture.
+> **Note:** This boilerplate serves as a minimal, production-ready starting point for Next.js 16 projects. It provides essential features without unnecessary complexity.
 
 ## Overview
 
@@ -22,10 +22,10 @@ This boilerplate provides a complete foundation for modern web development, inco
 - SEO optimization with Metadata API, robots.txt, and sitemap generation
 - Multi-language support (English, Indonesian, Japanese) with extensible architecture
 - Type-safe internationalization system with full TypeScript integration
-- Zustand state management with persistence
-- Semantic HTML structure
-- Scalable folder structure
+- Zustand state management with persistence (theme and loading state)
+- Clean, minimal folder structure
 - TypeScript strict mode for type safety
+- Comprehensive Playwright test suite
 
 ## Table of Contents
 
@@ -102,7 +102,7 @@ next16-boilerplate/
 │   │   └── styles/
 │   │       └── globals.css       # Tailwind CSS configuration
 │   ├── components/               # React components
-│   │   └── LocaleSwitcher/       # Language switcher component
+│   │   └── LocaleSwitcher.tsx   # Language switcher component
 │   ├── config/                   # Configuration files
 │   │   └── metadata.ts           # SEO metadata configuration
 │   ├── hooks/                    # Custom React hooks
@@ -119,8 +119,18 @@ next16-boilerplate/
 │   ├── stores/                   # Zustand state stores
 │   │   └── useUIStore.ts         # UI state management
 │   └── types/                    # TypeScript type definitions
+│       ├── common.ts             # Common type definitions
 │       ├── i18n.ts               # Locale types
+│       ├── index.ts              # Type exports
 │       └── metadata.ts           # Metadata types
+├── tests/                       # Playwright e2e tests
+│   ├── accessibility.spec.ts    # Accessibility tests
+│   ├── build-smoke.spec.ts      # Build smoke tests
+│   ├── homepage.spec.ts         # Homepage tests
+│   ├── i18n.spec.ts            # Internationalization tests
+│   ├── navigation.spec.ts       # Navigation tests
+│   ├── responsive.spec.ts       # Responsive design tests
+│   └── seo.spec.ts             # SEO tests
 ├── public/                      # Static assets
 ├── next.config.ts               # Next.js configuration
 ├── tsconfig.json                # TypeScript configuration
@@ -129,19 +139,80 @@ next16-boilerplate/
 
 ### Directory Structure Rationale
 
-The project follows a clean architecture with clear separation of concerns:
+The project follows a clean, flat architecture with clear separation of concerns:
 
-- **`/app`**: Contains Next.js App Router pages, layouts, and route handlers
-- **`/components`**: Reusable React components
-- **`/config`**: Application configuration files
+- **`/app`**: Next.js App Router with locale-based routing
+  - `[locale]/` - Dynamic route segment for internationalization
+  - `styles/` - Global CSS with Tailwind configuration
+  - `robots.ts` & `sitemap.ts` - SEO file generators
+  
+- **`/components`**: Reusable React components (currently just LocaleSwitcher)
+  
+- **`/config`**: Application configuration
+  - `metadata.ts` - Centralized SEO metadata generation
+  
 - **`/hooks`**: Custom React hooks
-- **`/i18n`**: Internationalization routing and request configuration
-- **`/lib`**: Utility functions and helpers
-- **`/messages`**: Translation files in JSON format for each supported locale
-- **`/stores`**: Zustand state management stores
-- **`/types`**: Centralized TypeScript type definitions and interfaces
+  - `useLocale.ts` - Locale-aware navigation helper
+  
+- **`/i18n`**: Internationalization setup
+  - `routing.ts` - Locale configuration and middleware
+  - `request.ts` - Server-side i18n configuration
+  
+- **`/lib`**: Utility functions
+  - `utils.ts` - Common helpers (cn, formatDate, formatNumber, etc.)
+  
+- **`/messages`**: Translation JSON files for each locale
+  
+- **`/stores`**: Zustand state management
+  - `useUIStore.ts` - UI state (theme, loading, hydration)
+  
+- **`/types`**: TypeScript definitions
+  - `common.ts` - Shared component prop types
+  - `i18n.ts` - Locale types and metadata
+  - `metadata.ts` - SEO metadata types
+  - `index.ts` - Centralized type exports
+
+- **`/tests`**: Comprehensive Playwright e2e test suite
 
 This structure provides a solid foundation for building scalable applications.
+
+## Architecture Decisions
+
+### Minimal Boilerplate Philosophy
+This boilerplate follows a minimalist approach, including only essential features that most Next.js projects need:
+- **No demo content**: Just a clean homepage with feature cards
+- **Essential state only**: Zustand store includes only theme and loading state
+- **Core utilities**: Only the most commonly used utility functions (cn for className merging, date/number formatters)
+- **Production-ready**: Configured for static export by default with all optimizations enabled
+
+### Static Export by Default
+The boilerplate is configured for static export (`output: 'export'` in `next.config.ts`), which means:
+- All pages are pre-rendered at build time
+- No server runtime required for deployment
+- Can be hosted on any static hosting service (GitHub Pages, Netlify, Vercel, S3, etc.)
+- Perfect for content sites, documentation, and JAMstack applications
+
+### Type Safety
+TypeScript is configured with strict mode and additional checks:
+- `strict: true` - Enables all strict type checking options
+- `noImplicitAny: true` - Error on expressions with an implied 'any' type
+- `noUnusedLocals: true` - Report errors on unused local variables
+- `noUnusedParameters: true` - Report errors on unused parameters
+
+### State Management
+Zustand is used for client-side state management with:
+- **Persistence**: Theme preference is saved to localStorage
+- **DevTools**: Redux DevTools integration in development
+- **Hydration safety**: Includes hydration state tracking for SSR compatibility
+- **Minimal footprint**: Only ~8KB gzipped
+
+### Testing Strategy
+Comprehensive Playwright test suite covering:
+- **Accessibility**: WCAG compliance checks
+- **Internationalization**: Locale switching and translation verification
+- **SEO**: Meta tags, robots.txt, and sitemap validation
+- **Responsive Design**: Mobile, tablet, and desktop viewport testing
+- **Build Smoke Tests**: Ensures production build works correctly
 
 ## Internationalization
 
